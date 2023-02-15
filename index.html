@@ -56,43 +56,12 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
-
-      <!--section feauters-->
-      <!-- 
-      
-          <ul class="icon-list">
-            <li class="icon-item">
-              <span class="feauters-icon">
-                <svg width="64" height="64">
-                  <use href="./images/sprite.svg#icon-antenna-1"></use>
-                </svg>
-              </span>
-            </li>
-            <li class="icon-item">
-              <span class="feauters-icon">
-                <svg width="64" height="64">
-                  <use href="./images/sprite.svg#icon-clock-1"></use>
-                </svg>
-              </span>
-            </li>
-            <li class="icon-item">
-              <span class="feauters-icon">
-                <svg width="64" height="64">
-                  <use href="./images/sprite.svg#icon-diagram-1"></use>
-                </svg>
-              </span>
-            </li>
-            <li class="icon-item">
-              <span class="feauters-icon">
-                <svg width="64" height="64">
-                  <use href="./images/sprite.svg#icon-astronaut-1"></use>
-                </svg>
-              </span>
-            </li>
-          </ul> -->
+      <!-- -------------------feauters------------------ -->
       <section class="feauters">
         <div class="container">
           <h2 class="visually-hidden">company goals</h2>
@@ -462,5 +431,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg width="8" height="8">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
